@@ -1,0 +1,114 @@
+.arts_con{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/arts/img1.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arts_con_box{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.arts_con_box>div{
+    height: 300px;
+}
+.art1{
+    background: url("../img/arts/00.jpg") no-repeat center;
+    background-size: 600px;
+    transition: all 0.3s;
+}
+.art2{
+    background: url("../img/arts/02.jpeg") no-repeat center;
+    background-size: 600px;
+    transition: all 0.3s;
+}
+.art3{
+    background: url("../img/arts/03.jpg") no-repeat center;
+    background-size: 600px;
+    transition: all 0.3s;
+}
+.art4{
+    background: url("../img/arts/04.jpg") no-repeat center;
+    background-size: 600px;
+    transition: all 0.3s;
+}
+.art5{
+    background: url("../img/arts/05.gif") no-repeat center;
+    background-size: 600px;
+    transition: all 0.3s;
+}
+.art6{
+    background: url("../img/arts/06.png") no-repeat center;
+    background-size: 600px;
+    transition: all 0.3s;
+}
+.mark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.arts_con_box>div:hover{
+    background-size: 700px;
+    cursor: pointer;
+}
+.mark_img{
+    height: 60%;
+}
+.mark_img>img{
+    height: 100%;
+    width: auto !important;
+}
+.mark_btn{
+    width: 30%;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    font-family: Impact;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+.mark_btn:hover{
+    color: black;
+    background: white;
+}
+@media screen and (max-width: 700px){
+    .arts_con_box{
+        width: 95%;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        grid-gap: 10px;
+    }
+    .arts_con{
+        /*display: block;*/
+    }
+    .arts_con_box>div{
+        height: 200px;
+    }
+    .mark_btn{
+        width: 90%;
+    }
+    .mark_img{
+        height: 40%;
+    }
+}
+
+

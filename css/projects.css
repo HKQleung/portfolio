@@ -1,0 +1,81 @@
+.projects_con{
+    width: 100%;
+    overflow: hidden;
+}
+.projects_top{
+    width: 100% !important;
+    position: relative;
+}
+.projects_top>img{
+    width: 100%;
+}
+.projects_top>div{
+    width: 60%;
+}
+.projects_con>div{
+    width: 60%;
+}
+.projects_con1,.projects_con2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.projects_con1{
+    top: 45%;
+}
+.projects_con1>div{
+    color: white;
+}
+.projects_title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'DoHyeon-Regular';
+    margin-top: 20px;
+    color: black;
+}
+.projects_text{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'DoHyeon-Regular';
+    margin-top: 10px;
+    color: black;
+}
+.projects_con2{
+    top: 78%;
+}
+.projects_con3{
+    margin: 10vw auto 0 auto;
+}
+.projects_con4{
+    margin: 4vw auto 4vw auto;
+}
+@media screen and (max-width: 700px){
+    .projects_top{
+        width: 100% !important;
+    }
+    .projects_con>div{
+        width: 95%;
+    }
+    .projects_top>div{
+        width: 95%;
+    }
+    .projects_title{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .projects_text{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .projects_con1{
+        top: 20%;
+    }
+    .projects_con2{
+        top: 90%;
+    }
+    .projects_con3{
+        margin: 60vw auto 0 auto;
+    }
+}

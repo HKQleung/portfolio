@@ -1,0 +1,35 @@
+body{
+    background: #EAEAEA;
+}
+.projectList_con{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.go_back{
+    width: 100%;
+    text-align: left;
+    margin: 8vw 0 4vw 0;
+}
+.go_back>a{
+    color: black;
+    font-size: 28px;
+    font-family: 'DoHyeon-Regular';
+    font-weight: 600;
+}
+.newproject{
+    width: 100%;
+    margin-bottom: 2vw;
+}
+@media screen and (max-width: 700px){
+    .projectList_con{
+        width: 95%;
+    }
+    .go_back{
+        font-size: 16px;
+        margin: 12vw 0 4vw 0;
+    }
+    .go_back>a{
+        font-size: 16px;
+    }
+}
